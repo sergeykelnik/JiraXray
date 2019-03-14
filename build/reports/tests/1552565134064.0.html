@@ -1,0 +1,155 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><title>
+	Login
+</title><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex,nofollow" /><link type="text/css" rel="stylesheet" href="styles/login.css" /><link href="../App_Themes/Default/Styles/system.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Default/Styles/ToolButton.css" type="text/css" rel="stylesheet" /></head>
+    <body>
+        <div class="top-bar"><img src="images/episerver-white.svg" alt="logo" class="logo" /></div>
+        <form method="post" action="./login.aspx?ReturnUrl=%2fEPiServer%2fCMS%2fAdmin%2fDefault.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6pK21KQHmFE989WwC+COowx9ZPTZho0lKz2FdKMm241xA8cprPyJ4WxcE5VrSgVYo08BuJEhjV/MSNkZrv36dYzSMpjmN/A9XfdAzoSkKGM=" />
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZIPFIKDvvOHr3xxOXR4bEye8CCjuFCEQSQtgUHwlU2A_RX5eiU0cLOE3SIF8XxskXg2&amp;t=636681675604795562" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakDZShbeLGl0PnTENHVtvUY0u8eEdjznBBswVKMtGApMMPS8Ef9T0JQ78zl6xyUQ0Uu1QTiTcG637qi2VRUvoEx41&amp;t=636681675604795562" type="text/javascript"></script>
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYswv7oJsvLlTLlOuDhNOiM_f1v1TSbm1lbNG-oSmGeoj_83uzW98OJfErZiISXW04w2&amp;t=636681675604795562" type="text/javascript"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+function WebForm_OnSubmit() {
+if (window.location.hash &amp;&amp; window.location.hash.length &gt; 1) {
+                    var encodedHash = encodeURIComponent(window.location.hash.substr(1));
+                    var expiresDate = new Date();
+                    expiresDate.setTime(expiresDate.getTime() + (5 * 60 * 1000));
+                    document.cookie = 'epihash=' + encodedHash + '; path=/; expires=' + expiresDate.toGMTString();
+                };if (typeof(ValidatorOnSubmit) == "function" &amp;&amp; ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]&gt;
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="83631FEE" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="MpikzJGOjzLCl3xbQ33gH0QT5H/gOwob+BzOCPsrAMWBs5UzqF+pGMgBxdEcs7xAuEPdBiI76Mj0jljtWqfMY/CUXpANtkoJcvm6HgcVeIoTrwhEfGkS8eG8vCYATcJVcT/POEeoT7qjV/DAXspCrrQxXfSZFrYbaEB2X1Q3C20=" />
+</div>
+            <div id="LoginControl" class="js-login-wrapper login-wrapper img1">
+
+              <div class="modal">
+
+            <ol class="clearfix">
+                <li><img src="images/login/DXC_long.svg" alt="logo" class="logo" /></li>
+                <li>
+                    <h2 class="text--error"></h2>
+                    <div id="LoginControl_ValidationSummary1" class="text--error" style="display:none;">
+
+</div>
+                </li>
+                <li>
+                    <label for="UserName">Username</label>
+                    <input name="LoginControl$UserName" type="text" id="LoginControl_UserName" />
+                    <span id="LoginControl_RequiredFieldValidator1" style="display:none;">­</span>
+                </li>
+                <li>
+                    <label for="Password">Password</label>
+                    <input name="LoginControl$Password" type="password" id="LoginControl_Password" />
+                    <span id="LoginControl_RequiredFieldValidator2" style="display:none;">­</span>
+                </li>
+                <li>
+                    <input type="submit" name="LoginControl$Button1" value="Log in" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LoginControl$Button1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="LoginControl_Button1" class="epi-button-child-item" />
+                </li>
+                <li>
+                    <p class="text--small">
+                        <a href="#" onclick="toggleCookieText(); return false;">
+                            When you log in, cookies will be used.
+                        </a>
+                    </p>
+                    <div id="cookieInfoPanel" class="cookie-information">
+                        <p class="text--small">
+                            A cookie containing login information will be sent to your web browser. If you do not want to receive cookies, you will be unable to log into the website.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+          </div>
+        </div>
+        
+    
+<script type="text/javascript">
+//&lt;![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("LoginControl_ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("LoginControl_RequiredFieldValidator1"), document.getElementById("LoginControl_RequiredFieldValidator2"));
+//]]&gt;
+</script>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var LoginControl_ValidationSummary1 = document.all ? document.all["LoginControl_ValidationSummary1"] : document.getElementById("LoginControl_ValidationSummary1");
+LoginControl_ValidationSummary1.displaymode = "List";
+var LoginControl_RequiredFieldValidator1 = document.all ? document.all["LoginControl_RequiredFieldValidator1"] : document.getElementById("LoginControl_RequiredFieldValidator1");
+LoginControl_RequiredFieldValidator1.controltovalidate = "LoginControl_UserName";
+LoginControl_RequiredFieldValidator1.errormessage = "You must enter a name";
+LoginControl_RequiredFieldValidator1.display = "Dynamic";
+LoginControl_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+LoginControl_RequiredFieldValidator1.initialvalue = "";
+var LoginControl_RequiredFieldValidator2 = document.all ? document.all["LoginControl_RequiredFieldValidator2"] : document.getElementById("LoginControl_RequiredFieldValidator2");
+LoginControl_RequiredFieldValidator2.controltovalidate = "LoginControl_Password";
+LoginControl_RequiredFieldValidator2.errormessage = "You must enter a password";
+LoginControl_RequiredFieldValidator2.display = "Dynamic";
+LoginControl_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+LoginControl_RequiredFieldValidator2.initialvalue = "";
+//]]&gt;
+</script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('LoginControl_UserName');//]]&gt;
+</script>
+</form>
+
+    <script>
+        var classes = [' img1', ' img2', ' img3'];
+        document.getElementById("LoginControl").className += classes[Math.floor(Math.random() * classes.length)]
+
+        function toggleCookieText() {
+            document.getElementById("cookieInfoPanel").classList.toggle("is-visible");
+            return false;
+        }
+    </script>
+
+
+</body></html>

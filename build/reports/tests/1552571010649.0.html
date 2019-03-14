@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>
+	Search Users
+</title>
+        <!-- Mimic Internet Explorer 7 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><link rel="stylesheet" type="text/css" href="/EPiServer/Shell/10.9.1.0/ClientResources/epi/themes/legacy/ShellCore.css" />
+<script type="text/javascript" src="/EPiServer/Shell/10.9.1.0/ClientResources/ShellCore.js"></script>
+<link rel="stylesheet" type="text/css" href="/EPiServer/Shell/10.9.1.0/ClientResources/epi/themes/legacy/ShellCoreLightTheme.css" />
+<script type="text/javascript" src="/EPiServer/CMS/10.9.1.0/ClientResources/ReportCenter/ReportCenter.js"></script>
+<link href="../../../App_Themes/Default/Styles/system.css" type="text/css" rel="stylesheet" /><link href="../../../App_Themes/Default/Styles/ToolButton.css" type="text/css" rel="stylesheet" /></head>
+    <body id="body">
+        <form method="post" action="./SearchUsers.aspx" id="aspnetForm" novalidate="true">
+<div class="aspNetHidden">
+<input type="hidden" name="__epiXSRF" id="__epiXSRF" value="nwqgp7HJU2HJUsbmtOl6JQ6tsyDoPQwvHZxEjm8Cjng=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PvabB937OX+ViCkPRV0+FCdjD/60dXQ0MREY9gRlitkbtGB8TRNfhUw5iZwSwC3NtM0SzIh1wkb9k8rnmxsUEk6EUme4l1SGX45mTRxyaLZu3u0CsfV+rPAFzL6XhbC1QInrpK5lkQG3SxmGnHJt4yf4xmCXzmbUk/ECmdR34IJPBT0iXUI+kD9QzzzstT7rjdFKfGqOwFJExShIXsCa7RKIOMd5nBN5iAW6ayWO5hT0Z30S+aO22HurU1I28w7ueOQC6s1okSDDEBHcuBBIAMJDc3W58tFpGr9NO/+AeClxpbWjv5trwMCnsddBwEijPTrna48D9OD4JpL4d6PGUy21TJvKrj1JmxcZJhwV6woxcRFhFF20efYucUnK/tJSBH0q1MTOZ7OugYcDkbUB7E+wVP8XLfcrPdYs3zoXqX2c1R/56b0CPvPF3yfOkBFgBz3OzsaO9V1WNZz9cm4+xIAAEEUdRH+UHcJBvLshTtkvmGCfS0yVrlq+pCcgKsfMhuDQrXaNMWco+5CYf/4a7cplFUFvHt/SPgfU60vQIt/HOk2KzgLAGnRbGvGmW9C7rfemanO8NhymUCvx2VDUZq/kGoKawcnyZ0nN+bY5BI0NS4evuNyFxp2mACa5eiKph5hkXHGGC7t+6mbR33t2zWnlJlPc00sJ05SdBZ9RdzN2HiIyHs9IkQ1EU/GTKFeRcpEmHNsK5ynekFyNDUPD2ZWucFL2ursfA6sMcjTk1J6W4yazfn1VypTO66j2DW/u" />
+</div>
+
+
+<script src="/Util/javascript/episerverscriptmanager.js" type="text/javascript"></script>
+<script src="/EPiServer/CMS/javascript/system.js" type="text/javascript"></script>
+<script src="/EPiServer/CMS/javascript/dialog.js" type="text/javascript"></script>
+<script src="/EPiServer/CMS/javascript/system.aspx" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="673B0F43" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ehu1z56o2Tzeo00pR6R9eTxmzYoPkV0fvQ94upsR0Hbo8CLE0s7LHj/rbpGvcd3i63JPvo78gmJVKOvU/u3GMD5ID6y969V5BnJ7oURrPYeUUrR6hHNaqLhHvxvMC0X0NhfOYikSDcRuhs6Kf9Wb+YFFEjQ07U+FPih1alwWLup2v2FKbimojiq7HjAAWbkquiz/yQ4kwgQNv4DOaYP5VKzxugvTJAglnN/lp3SCtoA=" />
+</div>
+            <div class="epi-contentContainer epi-padding">
+                <div class="epi-contentArea">
+                    <h1 class="EP-prefix">
+	Search Users/Groups<a onclick="window.open('http://webhelp.episerver.com/17-2/EpiserverUserGuide_csh.htm#searchusers','_blank', 'scrollbars=yes, height=500, location=no, menubar=no, resizable=yes, toolbar=no, width=840');return false;" title="Help" href="http://webhelp.episerver.com/17-2/EpiserverUserGuide_csh.htm#searchusers" target="_blank"><img class="EPEdit-CommandTool" align="absmiddle" src="/App_Themes/Default/Images/Tools/Help.png" border="0" alt="Help" /></a>
+</h1>
+                    <div id="FullRegion_ValidationSummary" class="EP-validationSummary" style="color:Black;display:none;">
+
+</div>
+                </div>
+
+                
+
+    <script language="javascript" type="text/javascript">
+     function ToggleSearchInputs(e) 
+     {
+        var searchByMembership = parseInt( this.options[ this.selectedIndex ].value ) == "1";
+        var toggleRows = document.getElementById("ToggleRow");
+        toggleRows.style.display = searchByMembership ? 'block' : 'none';
+    }
+    </script>
+
+    <div id="FullRegion_MainRegion_SearchDiv" class="epi-formArea epi-paddingVertical-small">
+        <div class="epi-size15">
+            <div>
+                <label for="FullRegion_MainRegion_GroupSelection">Type</label>
+                <select name="ctl00$FullRegion$MainRegion$GroupSelection" id="FullRegion_MainRegion_GroupSelection" class="episize240">
+	<option selected="selected" value="1">Users</option>
+	<option value="2">Groups</option>
+
+</select>
+            </div>
+            
+            <div>
+                <label for="FullRegion_MainRegion_FirstName">Name</label>
+                <input name="ctl00$FullRegion$MainRegion$FirstName" type="text" maxlength="50" id="FullRegion_MainRegion_FirstName" class="episize240" />
+            </div>
+            
+            <div id="ToggleRow" style="display: block;">
+                <label for="FullRegion_MainRegion_Email">E-mail address</label>
+                <input name="ctl00$FullRegion$MainRegion$Email" type="text" value="testeu01_haha@yopmail.com" maxlength="50" id="FullRegion_MainRegion_Email" class="episize240" />
+            </div>
+            
+            <div>
+                <label for="FullRegion_MainRegion_PagingSize">Number of hits per page</label>
+                <input name="ctl00$FullRegion$MainRegion$PagingSize" type="text" value="1000" maxlength="50" id="FullRegion_MainRegion_PagingSize" class="episize240" />
+            </div>
+            
+            <div id="FullRegion_MainRegion_ToolButtonDiv" class="epi-indent">
+                <span class="epi-cmsButton"><input class="epi-cmsButton-text epi-cmsButton-tools epi-cmsButton-Search" type="submit" name="ctl00$FullRegion$MainRegion$SearchButton" id="FullRegion_MainRegion_SearchButton" value="Search" title="Search" onmouseover="EPi.ToolButton.MouseDownHandler(this)" onmouseout="EPi.ToolButton.ResetMouseDownHandler(this)" /></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table class="epi-default" cellspacing="0" id="FullRegion_MainRegion_Grid" style="border-style:None;border-collapse:collapse;">
+	<tbody><tr>
+		<th scope="col"> </th><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">E-mail address</th><th scope="col">Description</th><th align="center" scope="col">Active</th><th align="center" scope="col">Locked out</th>
+	</tr><tr class="epipager">
+		<td colspan="7"><span>1</span></td>
+	</tr>
+</tbody></table>
+    </div>
+
+                </div>
+            
+        
+<script type="text/javascript">
+//&lt;![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("FullRegion_ValidationSummary"));
+//]]&gt;
+</script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+EPi.SetupEvents = function()
+{
+	EPi.AddEventListener(window,"load",function(e){return (EPi.FocusElement("FullRegion_MainRegion_FirstName", true, true));});
+	EPi.AddEventListener(window,"load",function() {ToggleSearchInputs.call(document.getElementById("FullRegion_MainRegion_GroupSelection"));});
+	EPi.AddEventListener("FullRegion_MainRegion_GroupSelection","change",ToggleSearchInputs);
+
+}
+//]]&gt;
+</script>
+</form>
+    
+
+</body></html>
